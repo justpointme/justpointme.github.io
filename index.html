@@ -420,7 +420,8 @@
 		function addToRecentSearches(query) {
 			var recentSearches = window.localStorage.getItem('recentSearches');
 			if (recentSearches == undefined) {
-				window.localStorage.setItem('recentSearches', [query]);
+				window.localStorage.setItem('recentSearches', []);
+				window.localStorage.getItem('recentSearches').append(query)
 			}
 			else if (recentSearches.indexOf(query) < 0) {
 				recentSearches.append(query);
