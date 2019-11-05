@@ -418,7 +418,7 @@
 
 
 		function addToRecentSearches(query) {
-			var recentSearches = window.localStorage;
+			var recentSearches = window.localStorage.getItem('recentSearches');
 			if (recentSearches == undefined) {
 				window.localStorage.setItem('recentSearches', [query]);
 			}
