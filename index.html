@@ -143,7 +143,6 @@
 									<div id="errorMessage"></div>
 								</center>
 								<center>
-									<!--
 										<img src="./images/adaptor.jpg" id="adaptor" class="hiddenPics">
 										<img src="./images/air-conditioning.jpeg" id="air-conditioning" class="hiddenPics">
 										<img src="./images/air-conditioning.jpeg" id="ac" class="hiddenPics">
@@ -341,7 +340,6 @@
 										<img src="./images/wifi.png" id="wifi" class="hiddenPics">
 										<img src="./images/wine.jpg" id="wine" class="hiddenPics">
 										<img src="./images/woman.jpg" id="woman" class="hiddenPics">
-										-->
 									<div class="spacer"></div>
 								</center>
 
@@ -382,10 +380,12 @@
 			else {
 				document.getElementById('errorMessage').innerHTML = "";
 				var queryResult = document.getElementById('queryResult');
-				queryResult.setAttribute('src', String("./images/" + imagesMap[image]));
-				// queryResult.setAttribute('src', document.getElementById(image).src);
+				queryResult.setAttribute('src', document.getElementById(image).src);
 				queryResult.setAttribute('height', 250);
-				// addToRecentSearches(providedQuery) --> To be used in production
+				addToRecentSearches(providedQuery)
+				// Add online & offline options!!!!
+				// queryResult.setAttribute('src', String("./images/" + imagesMap[image]));
+
 			}
 		}
 
