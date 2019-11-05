@@ -143,6 +143,7 @@
 									<div id="errorMessage"></div>
 								</center>
 								<center>
+									<!--
 										<img src="./images/adaptor.jpg" id="adaptor" class="hiddenPics">
 										<img src="./images/air-conditioning.jpeg" id="air-conditioning" class="hiddenPics">
 										<img src="./images/air-conditioning.jpeg" id="ac" class="hiddenPics">
@@ -340,6 +341,7 @@
 										<img src="./images/wifi.png" id="wifi" class="hiddenPics">
 										<img src="./images/wine.jpg" id="wine" class="hiddenPics">
 										<img src="./images/woman.jpg" id="woman" class="hiddenPics">
+										-->
 									<div class="spacer"></div>
 								</center>
 
@@ -380,7 +382,8 @@
 			else {
 				document.getElementById('errorMessage').innerHTML = "";
 				var queryResult = document.getElementById('queryResult');
-				queryResult.setAttribute('src', document.getElementById(image).src);
+				queryResult.setAttribute('src', String("./images/" + imagesMap[image]));
+				// queryResult.setAttribute('src', document.getElementById(image).src);
 				queryResult.setAttribute('height', 250);
 				// addToRecentSearches(providedQuery) --> To be used in production
 			}
@@ -720,6 +723,119 @@
 			"y": [],
 			"z": []
 		}
+
+		var imagesMap = {
+    "adaptor": "adaptor.jpg",
+    "air-conditioning": "air-conditioning.jpeg",
+    "airplane": "airplane.jpeg",
+    "airport": "airport.jpg",
+    "alcohol": "alcohol.jpg",
+    "allergy": "allergy.jpg",
+    "apple": "apple.jpg",
+    "arm": "arm.jpg",
+    "backpack": "backpack.jpg",
+    "bakery": "bakery.jpg",
+    "banana": "banana.jpg",
+    "bar": "bar.jpg",
+    "barbeque": "barbeque.jpg",
+    "barber": "barber.jpg",
+    "beach": "beach.jpg",
+    "bed": "bed.jpg",
+    "beer": "beer.jpg",
+    "bench": "bench.jpg",
+    "bin": "bin.jpg",
+    "bird": "bird.jpg",
+    "bluetooth": "bluetooth.png",
+    "boat": "boat.jpg",
+    "book": "book.jpg",
+    "bookstore": "bookstore.jpg",
+    "bottle": "bottle.jpg",
+    "bowl": "bowl.jpg",
+    "boy": "boy.jpg",
+    "bread": "bread.jpg",
+    "burger-king": "burger-king.png",
+    "burger": "burger.jpg",
+    "bus-stop": "bus-stop.jpeg",
+    "bus": "bus.jpeg",
+    "cable-car": "cable-car.jpg",
+    "calculator": "calculator.jpg",
+    "camera": "camera.jpg",
+    "camp": "camp.jpg",
+    "card": "card.png",
+    "cards": "cards.jpg",
+    "cat": "cat.jpg",
+    "chopsticks": "chopsticks.jpg",
+    "coffee": "coffee.jpg",
+    "convenience-store": "convenience-store.jpg",
+    "cow": "cow.jpg",
+    "cup": "cup.jpg",
+    "egg": "egg.jpg",
+    "ferry": "ferry.jpg",
+    "fish": "fish.jpg",
+    "food": "food.jpg",
+    "fork": "fork.jpg",
+    "fruits": "fruits.jpg",
+    "great-wall": "great-wall.JPG",
+    "great-wall2": "great-wall2.JPG",
+    "knife": "knife.jpg",
+    "laptop": "laptop.jpg",
+    "library": "library.jpg",
+    "mall": "mall.jpg",
+    "man": "man.jpg",
+    "map": "map.jpg",
+    "master-card": "master-card.jpeg",
+    "mc-donald's": "mc-donald's.png",
+    "medicine": "medicine.jpg",
+    "metro": "metro.jpg",
+    "money": "money.jpg",
+    "movie": "movie.jpg",
+    "museum": "museum.jpg",
+    "night": "night.jpg",
+    "notebook": "notebook.jpg",
+    "nuts": "nuts.jpg",
+    "ocean": "ocean.jpg",
+    "passport": "passport.jpg",
+    "pasta": "pasta.jpg",
+    "pen": "pen.jpg",
+    "pencil": "pencil.png",
+    "phone": "phone.jpg",
+    "picture": "picture.jpg",
+    "pizza": "pizza.jpg",
+    "police": "police.jpg",
+    "rain": "rain.jpg",
+    "salad": "salad.jpg",
+    "sea": "sea.jpg",
+    "ship": "ship.jpg",
+    "shopping": "shopping.jpg",
+    "spaghetti": "spaghetti.jpg",
+    "starbucks": "starbucks.jpg",
+    "student": "student.jpg",
+    "suitcase": "suitcase.jpg",
+    "sun": "sun.jpg",
+    "table": "table.jpg",
+    "taxi": "taxi.jpg",
+    "tea": "tea.jpg",
+    "tent": "tent.jpg",
+    "time": "time.jpg",
+    "toilet-paper": "toilet-paper.jpg",
+    "toilet": "toilet.jpg",
+    "toilets": "toilets.png",
+    "toothbrush": "toothbrush.jpg",
+    "towel": "towel.jpg",
+    "train": "train.jpg",
+    "tv": "tv.png",
+    "umbrella": "umbrella.png",
+    "vegan": "vegan.jpg",
+    "vegetarian": "vegetarian.jpg",
+    "visa": "visa.png",
+    "vodka": "vodka.jpg",
+    "wall": "wall.jpg",
+    "watch": "watch.jpg",
+    "wifi": "wifi.png",
+    "wine": "wine.jpg",
+    "woman": "woman.jpg"
+}
+
 	</script>
 
 </body>
