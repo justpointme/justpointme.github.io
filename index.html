@@ -2,178 +2,242 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="./assets/landing-page/assets/img/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>JustPoint</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="./assets/landing-page/assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>JustPoint</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
 
-    <link href="./assets/landing-page/assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="./assets/landing-page/assets/css/landing-page.css" rel="stylesheet" />
+	<link href="./assets/landing-page/assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="./assets/landing-page/assets/css/landing-page.css" rel="stylesheet" />
 
-    <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+	<!--     Fonts and icons     -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+
+
+	<style>
+		@media only screen and (max-width: 365px) {
+			.opener {
+				margin-top: 40% !important;
+			}
+
+			.header-text {
+				margin-top: -10%;
+			}
+
+			#main-text {
+				margin-top: 0% !important;
+			}
+
+			.app-image {
+				max-width: 110px !important;
+				margin: 5px !important;
+			}
+			.coming-soon {
+				max-width: 80px !important;
+			}
+		}
+
+		@media only screen and (min-width: 365px) and (max-width: 500px) {
+			.opener {
+				margin-top: 40% !important;
+			}
+
+			.header-text {
+				margin-top: -10%;
+			}
+
+			#main-text {
+				margin-top: 0% !important;
+			}
+
+			.app-image {
+				max-width: 140px !important;
+				margin: 5px !important;
+			}
+		}
+
+		.header-text {
+			line-height: 40px;
+		}
+	</style>
 
 </head>
 
 <body class="landing-page landing-page1">
-    <nav class="navbar navbar-transparent navbar-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#example">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar bar1"></span>
-                    <span class="icon-bar bar2"></span>
-                    <span class="icon-bar bar3"></span>
-                </button>
-                <div class="logo-container">
-                    <div class="logo">
-                        <img src="./assets/landing-page/assets/img/template/soon-play.png">
-                    </div>
-                    <div class="logo">
-                        <img src="./assets/landing-page/assets/img/template/soon-app.png">
-                    </div>
-                </div>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="example">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="online.html">
-                            Try Online
-                        </a>
-                    </li>
-                    <li>
-                        <a href="offline.html">
-                            Try Offline
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-    </nav>
-    <div class="wrapper">
-        <div class="parallax filter-gradient blue" data-color="blue">
-            <div class="parallax-background">
-                <img class="parallax-background-image" src="./assets/landing-page/assets/img/template/bg1.jpg">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 hidden-xs">
-                        <div class="parallax-image">
-                            <img class="phone" src="./assets/landing-page/assets/img/template/iphone3.png" style="margin-top: 20px" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-md-offset-1">
-                        <div class="description">
-                            <h2>Speak the universal language.</h2>
-                            <br>
-                            <h5>The app that lets you speak to anyone, anywhere. </h5>
-                        </div>
+	<nav class="navbar navbar-transparent navbar-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#example">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar bar1"></span>
+					<span class="icon-bar bar2"></span>
+					<span class="icon-bar bar3"></span>
+				</button>
+				<div class="logo-container">
+					<div class="logo">
+						<img class="coming-soon" src="./assets/landing-page/assets/img/template/soon-play.png">
+					</div>
+					<div class="logo">
+						<img class="coming-soon" src="./assets/landing-page/assets/img/template/soon-app.png">
+					</div>
+				</div>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="example">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="online.html">
+							Try Online
+						</a>
+					</li>
+					<li>
+						<a href="offline.html">
+							Try Offline
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="wrapper">
+		<div class="parallax filter-gradient blue" data-color="blue">
+			<div class="parallax-background">
+				<img class="parallax-background-image" src="./assets/landing-page/assets/img/template/bg1.jpg">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 hidden-xs">
+						<div class="parallax-image">
+							<img class="phone" src="./assets/landing-page/assets/img/template/iphone3.png"
+								style="margin-top: 20px" />
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-1">
+						<div class="description opener">
+							<h2>Speak the universal language.</h2>
+							<br>
+							<h5>The app that lets you speak to anyone, anywhere. </h5>
+						</div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-gray section-clients">
-            <div class="container text-center">
-                <h4 class="header-text">A Picture is Worth a Thousand Words</h4>
-                <p>
-                    JustPoint is a universal translator built by travelers for travelers. Using our app you can easily
-                    communicate
-                    with anyone, irrespective of what language they speak. 
-                    Maybe you're in a foregin country craving a beer, or you want to ask how to get to the airport.
-                    All you need to do is type the word or
-                    concept you want
-                    to communicate and we'll provide you with the perfect picture to get your point across. 
-                    Then, with the picture in hand, just point!
-                </p>
-                <br>
-                <br>
-                <img src="./assets/landing-page/assets/img/template/airplane.jpeg" style="max-width: 205px;" />
-                <img src="./assets/landing-page/assets/img/template/ocean.jpg" style="max-width: 205px;" />
-                <img src="./assets/landing-page/assets/img/template/beer.jpg" style="max-width: 205px;" />
-                <img src="./assets/landing-page/assets/img/template/mc-donald's.jpeg" style="max-width: 205px;" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-gray section-clients">
+			<div class="container text-center">
+				<h4 class="header-text" id="main-text">A Picture is Worth a Thousand Words</h4>
+				<p>
+					JustPoint is a universal translator built by travelers for travelers. Using our app you can easily
+					communicate
+					with anyone, irrespective of what language they speak.
+					Maybe you're in a foregin country craving a beer, or you want to ask how to get to the airport.
+					All you need to do is type the word or
+					concept you want
+					to communicate and we'll provide you with the perfect picture to get your point across.
+					Then, with the picture in hand, just point!
+				</p>
+				<br>
+				<br>
+				<img src="./assets/landing-page/assets/img/template/airplane.jpeg" class="app-image"
+					style="max-width: 205px;" />
+				<img src="./assets/landing-page/assets/img/template/ocean.jpg" class="app-image"
+					style="max-width: 205px;" />
+				<img src="./assets/landing-page/assets/img/template/beer.jpg" class="app-image"
+					style="max-width: 205px;" />
+				<img src="./assets/landing-page/assets/img/template/mc-donald's.jpeg" class="app-image"
+					style="max-width: 205px;" />
 
 
-            </div>
-        </div>
-        <div class="section section-presentation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="description">
-                            <h4 class="header-text">Explain the unexplainable</h4>
-                            <p>Direct word translations can help at times, but they can also be quite dangerous.
-                                Concepts often get lost in translation, and there is no way to know that what you said
-                                is the same as what the other person understood. </p>
-                            <p> Translators such as Google Translate give a false sense of security to our communication
-                                which can lead to serious misunderstandings and undesirable events. Additionally
-                                they can only translate words, not concepts, and are designed to be a general-purpose tool.
-                                On the other hand, JustPoint is made specifically for travelers, aiming to make the experience of 
-                                visiting a foreign country as smooth and stress-free as possible. 
-                                
-                            </p>
-                            </p>
-                            <!-- <p>Imagine you are one of the 40 million toursits visiting Thailand every year and you decide to use a translator to inform workers at a restaurant that you are vegan. However, Thai is one of the many languages which uses the same word for the terms vegetarian and vegan, meaning that even when the waiter nods and assures you a dish is "vegan", you may have an unpleasant surpirse upon finding your dish contains eggs after the first bite. 
+			</div>
+		</div>
+		<div class="section section-presentation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="description">
+							<h4 class="header-text">Explain the unexplainable</h4>
+							<p>Direct word translations can help at times, but they can also be quite dangerous.
+								Concepts often get lost in translation, and there is no way to know that what you said
+								is the same as what the other person understood. </p>
+							<p> Translators such as Google Translate give a false sense of security to our communication
+								which can lead to serious misunderstandings and undesirable events. Additionally
+								they can only translate words, not concepts, and are designed to be a general-purpose
+								tool.
+								On the other hand, JustPoint is made specifically for travelers, aiming to make the
+								experience of
+								visiting a foreign country as smooth and stress-free as possible.
+
+							</p>
+							</p>
+							<!-- <p>Imagine you are one of the 40 million toursits visiting Thailand every year and you decide to use a translator to inform workers at a restaurant that you are vegan. However, Thai is one of the many languages which uses the same word for the terms vegetarian and vegan, meaning that even when the waiter nods and assures you a dish is "vegan", you may have an unpleasant surpirse upon finding your dish contains eggs after the first bite. 
                                 <p> -->
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-md-offset-1 hidden-xs">
-                        <img src="./assets/landing-page/assets/img/template/vegan2.png" style="max-width: 625px; margin-left: -10%;" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-demo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-offset-1">
-                        <h4 class="header-text">The choice is yours</h4>
-                        <p>
-                            When travelling, it can be difficult to get access to the internet and there may be limits to how much data you can use.
-                            Thus, to provide the best possible experience to users, we offer 3 different options to use our system:
+						</div>
+					</div>
+					<div class="col-md-5 col-md-offset-1 hidden-xs">
+						<img src="./assets/landing-page/assets/img/template/vegan2.png"
+							style="max-width: 625px; margin-left: -10%;" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-demo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-1">
+						<h4 class="header-text">The choice is yours</h4>
+						<p>
+							When travelling, it can be difficult to get access to the internet and there may be limits
+							to how much data you can use.
+							Thus, to provide the best possible experience to users, we offer 3 different options to use
+							our system:
 
-                        </p>
+						</p>
 
-                        <p>
-                                <b>iOS/Android App</b>
-                            </p>
-                            <p>The recommended way to use our system. Download the app once and have access to our entire database of pictures offline
-                                with an intuitive and simple-to-use UI. (Currently under development)
-                            </p>
-                        <p>
-                                <b>Online (Web)</b>
-                            </p>
-                            <p>Have access to the internet and don't want to download another app? You can siply access the online version of
-                                our system, which will use the internet to load for the pictures and provide a nicer UI for using the service.
-                            </p>
-                            <p>
-                                    <b>Offline (Web)</b>
-                                </p>
-                                <p>Our offline web system will load all the pictures for you as soon as you access the page so that you 
-                                    can have access to the entire database offline after the page loads once. You can then search for any
-                                    available picture with no internet at all. To speed up loading times, this service has a simpler UI, ensuring
-                                    that the user will only load the minimum necessary to run the app.
-                                </p>
-                                <br>
-                                <br>
-                                <center>
-                                <a href="online.html"><button class="btn btn-lg btn-info" >Try Now</button></a>
-                            </center>
+						<p>
+							<b>iOS/Android App</b>
+						</p>
+						<p>The recommended way to use our system. Download the app once and have access to our entire
+							database of pictures offline
+							with an intuitive and simple-to-use UI. (Currently under development)
+						</p>
+						<p>
+							<b>Online (Web)</b>
+						</p>
+						<p>Have access to the internet and don't want to download another app? You can siply access the
+							online version of
+							our system, which will use the internet to load for the pictures and provide a nicer UI for
+							using the service.
+						</p>
+						<p>
+							<b>Offline (Web)</b>
+						</p>
+						<p>Our offline web system will load all the pictures for you as soon as you access the page so
+							that you
+							can have access to the entire database offline after the page loads once. You can then
+							search for any
+							available picture with no internet at all. To speed up loading times, this service has a
+							simpler UI, ensuring
+							that the user will only load the minimum necessary to run the app.
+						</p>
+						<br>
+						<br>
+						<center>
+							<a href="online.html"><button class="btn btn-lg btn-info">Try Now</button></a>
+						</center>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
 
 </body>
 

@@ -194,7 +194,7 @@
 		}
 
 		function predictSearch() {
-			var currentSearch = document.getElementById('query').value;
+			var currentSearch = document.getElementById('query').value.toLowerCase();
 			document.getElementById('predictions').innerHTML = '';
 			document.getElementById('errorMessage').innerHTML = "";
 			if (currentSearch != '') {
