@@ -67,8 +67,7 @@
 			max-width: 50% !important;
 		}
 
-		#bg-pic {
-		}
+		#bg-pic {}
 
 		@media only screen and (max-width: 500px) {
 			.resultImage {
@@ -389,34 +388,34 @@
 			}
 		}
 
-	
-				function predictSearch() {
-					var currentSearch = document.getElementById('query').value.toLowerCase();
-					document.getElementById('predictions').innerHTML = '';
-					document.getElementById('errorMessage').innerHTML = "";
-					if (currentSearch != '') {
-						var sameFirstLetterWords = imageList[currentSearch[0]];
-						var len = sameFirstLetterWords.length;
-						var matchesArr = [];
-						for (var i = 0; i < len; i++) {
-							if (matchesArr.length == 4) {
-								break;
-							}
-							for (var j = 0; j < currentSearch.length; j++) {
-								if (currentSearch[j] != sameFirstLetterWords[i][j]) {
-									break;
-								}
-								else if (j == currentSearch.length - 1) {
-									matchesArr.push(sameFirstLetterWords[i]);
-								}
-							}
+
+		function predictSearch() {
+			var currentSearch = document.getElementById('query').value.toLowerCase();
+			document.getElementById('predictions').innerHTML = '';
+			document.getElementById('errorMessage').innerHTML = "";
+			if (currentSearch != '') {
+				var sameFirstLetterWords = imageList[currentSearch[0]];
+				var len = sameFirstLetterWords.length;
+				var matchesArr = [];
+				for (var i = 0; i < len; i++) {
+					if (matchesArr.length == 4) {
+						break;
+					}
+					for (var j = 0; j < currentSearch.length; j++) {
+						if (currentSearch[j] != sameFirstLetterWords[i][j]) {
+							break;
 						}
-						matchesArr.forEach(function (word) {
-							document.getElementById('predictions').innerHTML += '<p><button class="text-link" onmouseover="runSearch(this.innerHTML)">' + word + '</button></p>';
-						})
+						else if (j == currentSearch.length - 1) {
+							matchesArr.push(sameFirstLetterWords[i]);
+						}
 					}
 				}
-		
+				matchesArr.forEach(function (word) {
+					document.getElementById('predictions').innerHTML += '<p><button class="text-link" onmouseover="runSearch(this.innerHTML)">' + word + '</button></p>';
+				})
+			}
+		}
+
 
 		// Local storage does not work with static local websites
 		// To be used in production
@@ -730,6 +729,17 @@
 			"z": []
 		}
 
+
+		$('p').append(Math.random());
+
+		$(window).bind({
+			beforeunload: function (ev) {
+				ev.preventDefault();
+			},
+			unload: function (ev) {
+				ev.preventDefault();
+			}
+		});
 	</script>
 
 </body>
