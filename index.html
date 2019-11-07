@@ -79,7 +79,23 @@
 		}
 
 		/* For iPads - do people still use them?? */
-		@media only screen and (max-width: 1100px) {
+		@media only screen and (min-width: 650px) and (max-width: 800px) {
+			#vegan {
+				display: none;
+			}
+			#annoying-for-ipads {
+				max-height: 400px;
+			}
+			#also-annoying-for-ipads {
+				margin-top: -20%;
+			}
+			.phone {
+				display: none;
+			}
+		}
+
+		/* For iPad Pros - do people still use them?? */
+		@media only screen and (min-width: 365px) and (max-width: 1100px) {
 			.opener {
 				margin-top: 40% !important;
 			}
@@ -135,12 +151,12 @@
 		</div>
 	</nav>
 	<div class="wrapper">
-		<div class="parallax filter-gradient blue" data-color="blue">
+		<div id="annoying-for-ipads" class="parallax filter-gradient blue" data-color="blue">
 			<div class="parallax-background">
 				<img class="parallax-background-image" src="./assets/landing-page/assets/img/template/bg1.jpg">
 			</div>
 			<div class="container">
-				<div class="row">
+				<div class="row" id="also-annoying-for-ipads">
 					<div class="col-md-5 hidden-xs">
 						<div class="parallax-image">
 							<img class="phone" src="./assets/landing-page/assets/img/template/iphone3.png"
