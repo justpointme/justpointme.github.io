@@ -26,6 +26,7 @@
 			line-height: 40px;
 		}
 
+		/* For tiny phones (by today's standards), like iPhone 5 */
 		@media only screen and (max-width: 365px) {
 			.opener {
 				margin-top: 40% !important;
@@ -53,6 +54,7 @@
 			}
 		}
 
+		/* For most phones */
 		@media only screen and (min-width: 365px) and (max-width: 500px) {
 			.opener {
 				margin-top: 40% !important;
@@ -75,6 +77,20 @@
 				margin-left: 0 !important;
 			}
 		}
+
+		/* For iPads - do people still use them?? */
+		@media only screen and (max-width: 1100px) {
+			.opener {
+				margin-top: 40% !important;
+			}
+			.main-content {
+				margin-left: 0 !important;
+			}
+			#vegan {
+				max-width: 525px !important;
+			}
+		}
+
 	</style>
 
 </head>
@@ -193,7 +209,7 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-md-offset-1 hidden-xs">
-						<img src="./assets/landing-page/assets/img/template/vegan2.png"
+						<img id="vegan" src="./assets/landing-page/assets/img/template/vegan2.png"
 							style="max-width: 625px; margin-left: -10%;" />
 					</div>
 				</div>
