@@ -427,7 +427,9 @@
 			}
 			else if (recentSearches.indexOf(query) < 0) {
 				recentSearches.push(query);
-				recentSearches.pop();
+				if (recentSearches.length == 5) {
+					recentSearches.shift();
+				}
 				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
 			else {
