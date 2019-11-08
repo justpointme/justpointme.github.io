@@ -207,34 +207,34 @@
 						document.getElementById('predictions').innerHTML += '<p><button class="text-link" type="button" onmouseover="runSearch(this.innerHTML)">' + recentSearches[k] + '</button></p>';
 					}
 				}
-			} 
+			}
 			else {
-			var currentSearch = document.getElementById('query').value.toLowerCase();
-			document.getElementById('predictions').innerHTML = '';
-			document.getElementById('errorMessage').innerHTML = "";
-			if (currentSearch != '') {
-				var sameFirstLetterWords = imageList[currentSearch[0]];
-				var len = sameFirstLetterWords.length;
-				var matchesArr = [];
-				for (var i = 0; i < len; i++) {
-					if (matchesArr.length == 4) {
-						break;
-					}
-					for (var j = 0; j < currentSearch.length; j++) {
-						if (currentSearch[j] != sameFirstLetterWords[i][j]) {
+				var currentSearch = document.getElementById('query').value.toLowerCase();
+				document.getElementById('predictions').innerHTML = '';
+				document.getElementById('errorMessage').innerHTML = "";
+				if (currentSearch != '') {
+					var sameFirstLetterWords = imageList[currentSearch[0]];
+					var len = sameFirstLetterWords.length;
+					var matchesArr = [];
+					for (var i = 0; i < len; i++) {
+						if (matchesArr.length == 4) {
 							break;
 						}
-						else if (j == currentSearch.length - 1) {
-							matchesArr.push(sameFirstLetterWords[i]);
+						for (var j = 0; j < currentSearch.length; j++) {
+							if (currentSearch[j] != sameFirstLetterWords[i][j]) {
+								break;
+							}
+							else if (j == currentSearch.length - 1) {
+								matchesArr.push(sameFirstLetterWords[i]);
+							}
 						}
 					}
+					matchesArr.forEach(function (word) {
+						document.getElementById('predictions').innerHTML += '<p><button class="text-link" type="button" onmouseover="runSearch(this.innerHTML)">' + word + '</button></p>';
+					})
 				}
-				matchesArr.forEach(function (word) {
-					document.getElementById('predictions').innerHTML += '<p><button class="text-link" type="button" onmouseover="runSearch(this.innerHTML)">' + word + '</button></p>';
-				})
 			}
 		}
-	}
 
 		// This will throw errors when running locally! 
 		// No problem! window.localStorage will not work locally but works live
@@ -801,7 +801,7 @@
 			"debit-card": "card.png"
 		}
 
-
+		predictSearch()
 
 	</script>
 

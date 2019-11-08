@@ -67,8 +67,6 @@
 			max-width: 50% !important;
 		}
 
-		#bg-pic {}
-
 		@media only screen and (max-width: 500px) {
 			.resultImage {
 				/* Image modifications come here for Mobile */
@@ -429,9 +427,8 @@
 	}
 
 
-		// Local storage does not work with static local websites
-		// To be used in production
-
+		// This will throw errors when running locally! 
+		// No problem! window.localStorage will not work locally but works live
 		function addToRecentSearches(query) {
 			var storage = JSON.parse(window.localStorage.getItem('recentSearches'));
 			var recentSearches = $.extend(true, [], storage);
