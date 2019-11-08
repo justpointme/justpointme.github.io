@@ -385,8 +385,17 @@
 			}
 		}
 
+		var firstRun = true;
 
 		function predictSearch() {
+			if (firstRun) {
+				firstRun = false;
+				var storage = JSON.parse(window.localStorage.getItem('recentSearches'));
+				var recentSearches = $.extend(true, [], storage);
+				for (var i = 3; i < -1; i - 1) {
+					document.getElementById('predictions').innerHTML += '<p><button class="text-link" type="button" onmouseover="runSearch(this.innerHTML)">' + recentSearches[i] + '</button></p>';
+				}
+			}
 			var currentSearch = document.getElementById('query').value.toLowerCase();
 			document.getElementById('predictions').innerHTML = '';
 			document.getElementById('errorMessage').innerHTML = "";
@@ -416,10 +425,10 @@
 
 		// Local storage does not work with static local websites
 		// To be used in production
-		
+
 		function addToRecentSearches(query) {
 			var storage = JSON.parse(window.localStorage.getItem('recentSearches'));
-			var recentSearches = $.extend( true, [], storage);
+			var recentSearches = $.extend(true, [], storage);
 			if (storage == undefined) {
 				var searches = [query];
 				window.localStorage.setItem('recentSearches', JSON.stringify(searches));
@@ -438,7 +447,7 @@
 			}
 			console.log(recentSearches)
 		}
-	
+
 
 
 
@@ -732,6 +741,8 @@
 			"y": [],
 			"z": []
 		}
+
+		predictSearch()
 
 	</script>
 
