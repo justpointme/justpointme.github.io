@@ -193,8 +193,22 @@
 				// addToRecentSearches(providedQuery) --> To be used in production
 			}
 		}
+		var firstRun = true;
 
 		function predictSearch() {
+			if (firstRun) {
+				firstRun = false;
+				var storage = JSON.parse(window.localStorage.getItem('recentSearches'));
+				var recentSearches = $.extend(true, [], storage).reverse();
+
+				for (var k = 0; k < 4; k++) {
+					console.log(recentSearches[k])
+					if (recentSearches[k] != undefined) {
+						document.getElementById('predictions').innerHTML += '<p><button class="text-link" type="button" onmouseover="runSearch(this.innerHTML)">' + recentSearches[k] + '</button></p>';
+					}
+				}
+			} 
+			else {
 			var currentSearch = document.getElementById('query').value.toLowerCase();
 			document.getElementById('predictions').innerHTML = '';
 			document.getElementById('errorMessage').innerHTML = "";
@@ -220,27 +234,31 @@
 				})
 			}
 		}
+	}
 
-
-		// Local storage does not work with static local websites
-		// To be used in production
-		/*
+		// This will throw errors when running locally! 
+		// No problem! window.localStorage will not work locally but works live
 		function addToRecentSearches(query) {
-			var recentSearches = window.localStorage;
-			if (recentSearches == undefined) {
-				window.localStorage.setItem('recentSearches', [query]);
+			var storage = JSON.parse(window.localStorage.getItem('recentSearches'));
+			var recentSearches = $.extend(true, [], storage);
+			if (storage == undefined) {
+				var searches = [query];
+				window.localStorage.setItem('recentSearches', JSON.stringify(searches));
 			}
 			else if (recentSearches.indexOf(query) < 0) {
-				recentSearches.append(query);
-				recentSearches.pop();
+				recentSearches.push(query);
+				if (recentSearches.length == 5) {
+					recentSearches.shift();
+				}
+				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
 			else {
-				recentSearches.splice(1, recentSearches.indexOf(query));
-				recentSearches.append(query);
+				recentSearches.splice(recentSearches.indexOf(query), 1);
+				recentSearches.push(query);
+				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
+			console.log(recentSearches)
 		}
-		*/
-
 
 
 
