@@ -418,22 +418,25 @@
 
 		// Local storage does not work with static local websites
 		// To be used in production
-		/*
+		
 		function addToRecentSearches(query) {
-			var recentSearches = window.localStorage;
+			var recentSearches = JSON.parse(window.localStorage.getItem('recentSearches'));
 			if (recentSearches == undefined) {
-				window.localStorage.setItem('recentSearches', [query]);
+				var searches = [query];
+				window.localStorage.setItem('recentSearches', JSON.stringify(searches));
 			}
 			else if (recentSearches.indexOf(query) < 0) {
 				recentSearches.append(query);
 				recentSearches.pop();
+				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
 			else {
 				recentSearches.splice(1, recentSearches.indexOf(query));
 				recentSearches.append(query);
+				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
 		}
-		*/
+	
 
 
 
