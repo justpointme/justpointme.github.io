@@ -432,7 +432,7 @@
 				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
 			else {
-				recentSearches.splice(1, recentSearches.indexOf(query));
+				recentSearches.splice(recentSearches.indexOf(query), 1);
 				recentSearches.push(query);
 				window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
 			}
