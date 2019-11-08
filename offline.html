@@ -391,9 +391,9 @@
 			if (firstRun) {
 				firstRun = false;
 				var storage = JSON.parse(window.localStorage.getItem('recentSearches'));
-				var recentSearches = $.extend(true, [], storage);
-				console.log(recentSearches)
-				for (var k = 3; k > -1; k-1) {
+				var recentSearches = $.extend(true, [], storage).reverse();
+
+				for (var k = 0; k < 4; k++) {
 					console.log(k)
 					if (recentSearches[k] != undefined) {
 						document.getElementById('predictions').innerHTML += '<p><button class="text-link" type="button" onmouseover="runSearch(this.innerHTML)">' + recentSearches[k] + '</button></p>';
