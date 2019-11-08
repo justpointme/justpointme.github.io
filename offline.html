@@ -419,7 +419,7 @@
 		
 		function addToRecentSearches(query) {
 			var storage = window.localStorage.getItem('recentSearches');
-			var recentSearches = JSON.parse(storage);
+			var recentSearches = JSON.parse($.extend( true, {}, storage));
 			if (recentSearches == undefined) {
 				var searches = [query];
 				window.localStorage.setItem('recentSearches', JSON.stringify(searches));
