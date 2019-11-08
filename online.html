@@ -187,10 +187,9 @@
 			else {
 				document.getElementById('errorMessage').innerHTML = "";
 				var queryResult = document.getElementById('queryResult');
-				// queryResult.setAttribute('src', document.getElementById(image).src);
 				queryResult.setAttribute('height', 250);
 				queryResult.setAttribute('src', String("./images/" + imagesMap[image]));
-				// addToRecentSearches(providedQuery) --> To be used in production
+				addToRecentSearches(providedQuery);
 			}
 		}
 		var firstRun = true;
