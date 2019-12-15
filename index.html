@@ -57,6 +57,39 @@
 			max-height: 33px !important;
 		}
 
+		#presentation {
+			padding-bottom: 0;
+		}
+
+		#buttons {
+			margin: 0;
+			padding: 0;
+		}
+
+		#lab_social_icon_footer {
+			padding: 40px 0;
+			background-color: #eeeeee;
+		}
+
+		#lab_social_icon_footer a {
+			color: #333;
+		}
+		/*
+    Multicoloured Hover Variations
+*/
+
+		#lab_social_icon_footer #social-fb:hover {
+			color: #3B5998;
+		}
+
+		#lab_social_icon_footer #social-ig:hover {
+			color: #C13584;
+		}
+
+		#lab_social_icon_footer #social-em:hover {
+			color: #f39c12;
+		}
+
 		/* For tiny phones (by today's standards), like iPhone 5 */
 		@media only screen and (max-width: 365px) {
 			.opener {
@@ -83,6 +116,10 @@
 			.main-content {
 				margin-left: 0 !important;
 			}
+
+			#vegan {
+				display: none;
+			}
 		}
 
 		/* For most phones */
@@ -107,6 +144,10 @@
 			.main-content {
 				margin-left: 0 !important;
 			}
+
+			#vegan {
+				display: none;
+			}
 		}
 
 		/* For iPads - do people still use them?? */
@@ -129,7 +170,7 @@
 		}
 
 		/* For iPad Pros - do people still use them?? */
-		@media only screen and (min-width: 365px) and (max-width: 1100px) {
+		@media only screen and (min-width: 800px) and (max-width: 1100px) {
 			.opener {
 				margin-top: 40% !important;
 			}
@@ -138,9 +179,6 @@
 				margin-left: 0 !important;
 			}
 
-			#vegan {
-				max-width: 525px !important;
-			}
 		}
 	</style>
 
@@ -254,17 +292,12 @@
 		<div class="section section-gray section-clients">
 			<div class="container text-center">
 				<h4 class="header-text" id="main-text">A Picture is Worth a Thousand Words</h4>
-				<p>
-					JustPoint is a free universal translator built by travelers for travelers. Using our app you can
-					easily
-					communicate
-					with anyone, irrespective of what language they speak.
-					Maybe you're in a foreign country craving a beer, or you want to ask how to get to the airport.
-					All you need to do is type the word or
+
+				<p>JustPoint is a free universal translator built by travelers for travelers. Type the word or
 					concept you want
 					to communicate and we'll provide you with the perfect picture to get your point across.
-					Then, with the picture in hand, just point!
 				</p>
+				<p>Then, with the picture in hand, just point!</p>
 				<br>
 				<br>
 				<img src="./assets/landing-page/assets/img/template/airplane.jpeg" class="app-image"
@@ -279,37 +312,30 @@
 
 			</div>
 		</div>
-		<div class="section section-presentation">
+		<div class="section section-presentation" id="presentation">
 			<div class="container">
 				<div class="row main-content" style="margin-left: -12%;">
 					<div class="col-md-6">
 						<div class="description">
 							<h4 class="header-text">Explain the unexplainable</h4>
-							<p>Direct word translations can help at times, but they can also be quite dangerous.
-								Concepts often get lost in translation, and there is no way to know that what you said
+							<p>Direct word translations can help at times, but there is no way to know that
+								what you said
 								is the same as what the other person understood. </p>
-							<p> Translators such as Google Translate give a false sense of security to our communication
-								which can lead to serious misunderstandings and undesirable events. Additionally
-								they can only translate words, not concepts, and are designed to be a general-purpose
-								tool.
-								On the other hand, JustPoint is made specifically for travelers, aiming to make the
-								experience of
-								visiting a foreign country as smooth and stress-free as possible.
+							<p> Online translators can lead to serious misunderstandings and undesirable events. They
+								can only translate words, not concepts. </p>
 
-							</p>
-							</p>
-							<!-- <p>Imagine you are one of the 40 million toursits visiting Thailand every year and you decide to use a translator to inform workers at a restaurant that you are vegan. However, Thai is one of the many languages which uses the same word for the terms vegetarian and vegan, meaning that even when the waiter nods and assures you a dish is "vegan", you may have an unpleasant surpirse upon finding your dish contains eggs after the first bite. 
+							<!-- <p>Imagine you are one of the 40 million toursits visiting Thailand every year and you decide to use a translator to inform workers at a restaurant that you are vegan. However, Thai is one of the many languages which uses the same word for the terms vegetarian and vegan, meaning that even when the waiter nods and assures you a dish is "vegan", you may have an unpleasant surprise upon finding your dish contains eggs after the first bite. 
                                 <p> -->
 						</div>
 					</div>
 					<div class="col-md-5 col-md-offset-1 hidden-xs">
 						<img id="vegan" src="./assets/landing-page/assets/img/template/vegan2.png"
-							style="max-width: 625px; margin-left: -10%;" />
+							style="max-width: 625px; max-height: 400px; margin-left: -10%;" />
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section section-demo">
+		<div class="section section-demo" style="margin-top: 0%;">
 			<div class="container">
 				<div class="row main-content">
 					<div class="col-md-12 col-md-offset-1">
@@ -329,51 +355,31 @@
 							<b>100% Offline</b>
 						</p>
 						<p>
-							When travelling, it can be difficult to get access to the internet and there may be limits
-							to how much data you can use. Hence, it's essential that your translator is available
-							offline.
-							With JustPoint, when you donwload it once, you have everything you need and are ready to
-							head
-							out to the streets, wherever you are.
+							You donwload JustPoint once, and you have everything you need.
 						</p>
 						<p>
 							<b>900+ pictures hand-picked by travelers</b>
 						</p>
 						<p>
-							Searching for pictures online is one of the common ways that travelers get around these
-							days, but, besides the requirement for a reliable
-							internet connection,
-							the process can be more complicated than it seems. You need to open your browser,
-							search for a
-							word, scroll through multiple results, click on a picture, wait for it to load, and hope
-							that the picture is representative enough. With JustPoint, this process is faster and more
-							accurate.
 							All of our pictures have been hand-picked to represent each term in the best way
-							possible. In fact, over 150 pictures were designed by us
-							to ensure just that.
-							Try comparing Google Images results for "emergency" or "vegan" with our pics
-							and you'll see why
-							our pictures sure are worth a thousand words.
+							possible.
+
+							<p>Try comparing Google Images results for "emergency" or "vegan" with our pics.</p>
 						</p>
 						<p>
 							<b>Drawing Board</b>
 						</p>
+
+						<p>Digital pen and paper.</p>
 						<p>
-							Here's what one of our co-founders found out in his last trip to China: you should always
-							carry pen and paper with you.
-							In order to ensure you're taking the right bus, or to be able to ask someone for directions,
-							it is key to use Chinese characters.
-							But that requires carrying pen and paper at all times. Thus, JustPoint added a drawing
-							board. Using the board, you can let your
-							creativity flow and guide you around foreign land! You can write characters in the local
+							You can write characters in the local
 							language, draw a word that we haven't added yet,
-							or just use it to have fun. With the drawing board, you're free to use it as you wish! Just
-							make sure you're being respectful.
+							or just use it to have fun.
 						</p>
 						<br>
 						<br>
 
-						<div class="container">
+						<div class="container" id="buttons">
 							<div class="button-wrapper">
 								<a class="action-button"
 									href="https://apps.apple.com/us/app/justpoint-universal-translator/id1490678668"><button
@@ -394,7 +400,18 @@
 	<script src="./assets/material-bootstrap/assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="./assets/material-bootstrap/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
 
-</body>
 
+	<section id="lab_social_icon_footer">
+		<div class="container">
+			<div class="text-center center-block">
+				<a href="https://www.facebook.com/justpointme"><i id="social-fb"
+						class="fa fa-facebook-square fa-3x social"></i></a>
+				<a href="https://www.instagram.com/underrated.travel"><i id="social-ig"
+						class="fa fa-instagram fa-3x social"></i></a>
+				<a href="mailto:contact@dvision.tech"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+			</div>
+		</div>
+	</section>
+</body>
 
 </html>
