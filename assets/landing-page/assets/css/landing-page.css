@@ -31,6 +31,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
   padding-right: 1%;
 }
 
+@media only screen and (max-width: 365px) {
+  #apple {
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 34px !important;
+  }
+
+  #google {
+    margin-top: 5px;
+    height: 35px !important;
+  }
+}
+
 .coming-soon {
   display: block !important;
   width: auto !important;
@@ -1101,7 +1114,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
    .landing-page .section-presentation {
     overflow: hidden;
     width: 100%;
-    min-height: 600px;
+    min-height: 400px;
     margin-top: 30px;
    }
 

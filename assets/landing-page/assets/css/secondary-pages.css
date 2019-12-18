@@ -20,15 +20,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
     font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
   }
 
+
   #apple {
     height: 40px;
-    margin-left: 5%;
+    margin-left: 10px;
     margin-right: 10px !important;
   }
   
   #google {
     height: 42px;
     padding-right: 1%;
+  }
+  
+  @media only screen and (max-width: 365px) {
+    #apple {
+      margin-top: 5px;
+      padding-left: 10px;
+      height: 34px !important;
+    }
+  
+    #google {
+      margin-top: 5px;
+      height: 35px !important;
+    }
   }
   
   .coming-soon {
@@ -1658,9 +1672,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
     .navbar-toggle{
       padding: 16px 10px;
     }
-    .logo-container .logo{
-      margin-left: 20px;
-    }
+
     .landing-page .wrapper{
       text-align: center;
     }
