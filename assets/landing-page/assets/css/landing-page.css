@@ -20,6 +20,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-s
   font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
 }
 
+#apple {
+  height: 40px;
+  margin-left: 5%;
+  margin-right: 10px !important;
+}
+
+#google {
+  height: 42px;
+  padding-right: 1%;
+}
+
+.coming-soon {
+  display: block !important;
+  width: auto !important;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: 400;
   margin: 30px 0 15px;
@@ -837,7 +853,6 @@ a:focus, a:active {
 
 .logo-container .logo{
     overflow: hidden;
-    width: 120px; 
     float: left;
 }
 
@@ -848,15 +863,10 @@ a:focus, a:active {
     float: left;
     margin-left: 10px;
     margin-top: 5px;
-    width: 50px;
-    max-height: 40px;
+
 }
 .logo-container{
     margin-top: 10px;
-}
-.logo-container .logo img{
-    max-width: 100%;
-    max-height: 45px;
 }
 
 .landing-page1 .container{
@@ -1645,6 +1655,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     padding: 16px 10px;
   }
   .logo-container .logo{
+    margin-left: 0px;
+  }
+  #apple {
     margin-left: 20px;
   }
   .landing-page .wrapper{
