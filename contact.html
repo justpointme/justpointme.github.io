@@ -39,6 +39,30 @@
 		}
 
 
+		#lab_social_icon_footer {
+			padding: 40px 0;
+			background-color: #eeeeee;
+		}
+
+		#lab_social_icon_footer a {
+			color: #333;
+		}
+		/*
+    Multicoloured Hover Variations
+*/
+
+		#lab_social_icon_footer #social-fb:hover {
+			color: #3B5998;
+		}
+
+		#lab_social_icon_footer #social-ig:hover {
+			color: #C13584;
+		}
+
+		#lab_social_icon_footer #social-em:hover {
+			color: #f39c12;
+		}
+
 		/* For tiny phones (by today's standards), like iPhone 5 */
 		@media only screen and (max-width: 365px) {
 			.opener {
@@ -233,11 +257,47 @@
 		<div class="section section-gray section-clients">
 			<div class="container text-center">
 				<h4 class="header-text" id="main-text">Always happy to assist</h4>
+
+				<section class="team-section my-5">
+
+						<!-- Grid row -->
+						<div class="row text-center text-md-left">
+	
+							<!-- Grid column -->
+							<div class="col-md-6">
+								<div class="avatar mb-md-0 mb-2 mx-2">
+									<img src="assets\landing-page\assets\img\template\yakko majuri.jpg" style="max-width: 250px";
+										class="rounded-circle z-depth-1" alt="Sample avatar"> 
+								</div>
+								<p class="text-uppercase blue-text"><strong>Yakko Majuri</strong></p>
+								<ul class="list-unstyled mb-0">
+								<a href="https://www.linkedin.com/in/yakko-majuri/"><i id="social-li"
+										class="fa fa-linkedin-square fa-3x social"></i></a>
+								<a href="https://github.com/yakkomajuri"><i id="social-fb"
+										class="fa fa-github-square fa-3x social"></i></a>
+								</ul>
+							</div>
+	
+							<div class="col-md-6">
+								<div class="avatar mb-md-0 mb-2 mx-2">
+									<img src="assets\landing-page\assets\img\template\ohto pentikainen.jpeg" style="max-width: 250px";
+										class="rounded-circle z-depth-1" alt="Sample avatar">
+								</div>
+								<p class="text-uppercase blue-text"><strong>Ohto Pentikäinen</strong></p>
+								<ul class="list-unstyled mb-0">
+									<a href="https://www.linkedin.com/in/lad/"><i id="social-li"
+											class="fa fa-linkedin-square fa-3x social"></i></a>
+									<a href="https://github.com/ohtopen"><i id="social-fb"
+											class="fa fa-github-square fa-3x social"></i></a>
+								</ul>
+							</div>
+						</div>
+					</section>
+
 				<p>
-					If you have any questions, comments or feedback for the JustPoint team, feel free to contact us at
-					<a href="mailto:contact@dvision.tech">contact@dvision.tech</a>
-					and we'll be more than happy to assist in any way we can. We aim to reply to all emails within 2
-					business days.
+					If you have any questions, comments or feedback for the JustPoint team, feel free to contact us in Linkedin or
+					<a href="mailto:contact@dvision.tech">contact@dvision.tech</a>.
+					We'll be more than happy to assist in any way we can. 
 				</p>
 
 			</div>
@@ -248,6 +308,18 @@
 	<script src="./assets/material-bootstrap/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 	<script src="./assets/material-bootstrap/assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="./assets/material-bootstrap/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<section id="lab_social_icon_footer">
+		<div class="container">
+			<div class="text-center center-block">
+				<a href="https://www.facebook.com/justpointme"><i id="social-fb"
+						class="fa fa-facebook-square fa-3x social"></i></a>
+				<a href="https://www.instagram.com/underrated.travel"><i id="social-ig"
+						class="fa fa-instagram fa-3x social"></i></a>
+				<a href="mailto:contact@dvision.tech"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+			</div>
+		</div>
+	</section>
 
 </body>
 
