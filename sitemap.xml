@@ -9,33 +9,33 @@
 
 <url>
   <loc>https://justpoint.me/</loc>
-  <lastmod>2019-12-07T09:39:52+00:00</lastmod>
+  <lastmod>2019-12-18T08:47:06+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://justpoint.me/index.html</loc>
+  <lastmod>2019-12-18T08:47:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://justpoint.me/about.html</loc>
-  <lastmod>2019-12-07T09:39:52+00:00</lastmod>
+  <lastmod>2019-12-18T08:47:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://justpoint.me/faq.html</loc>
-  <lastmod>2019-12-07T09:39:52+00:00</lastmod>
+  <lastmod>2019-12-18T08:47:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://justpoint.me/stories.html</loc>
+  <lastmod>2019-12-18T08:47:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://justpoint.me/contact.html</loc>
-  <lastmod>2019-12-07T09:39:52+00:00</lastmod>
+  <lastmod>2019-12-18T08:47:06+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://justpoint.me/privacy.html</loc>
-  <lastmod>2019-12-07T09:39:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://justpoint.me/index.html</loc>
-  <lastmod>2019-12-07T09:39:52+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 
 
